@@ -12,14 +12,16 @@
 
 ### 1. 打开 PowerShell 或 CMD
 
-- 按下 `Win + R`，输入 `powershell `或 `cmd` ，回车打开终端
+- 按下 `Win + R`，输入 `powershell `或 `cmd` ，回车打开终端 / Mac打开终端或命令提示符
 
 ### 2. 执行官方安装命令
 
 Claude Code官方网站：https://claude.com/product/claude-code
 
 ```powershell
-irm https://claude.ai/install.ps1 | iex
+Windows：irm https://claude.ai/install.ps1 | iex
+
+Mac：curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 - 命令执行过程中会自动下载并安装 Claude Code，安装完成后会输出版本号和安装路径
@@ -51,7 +53,9 @@ claude --version
 Claude Code 的配置文件 `settings.json` 位于以下路径：
 
 ```plaintext
-C:\Users\你的用户名\.claude\settings.json
+Windows：C:\Users\你的用户名\.claude\settings.json
+
+Mac：~/.claude/settings.json
 ```
 
 如果文件不存在，手动创建该文件即可。
